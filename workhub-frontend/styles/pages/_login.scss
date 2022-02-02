@@ -1,0 +1,190 @@
+.login {
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../../images/backgrounds/login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    box-sizing: border-box;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        height: 90%;
+    }
+
+    &__back {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        font-family: Inter;
+        letter-spacing: -0.01em;
+        color: #EBEBEB;
+        text-decoration: none;
+        position: relative;
+        
+
+        &:hover {
+            &::before {
+                transform: translateX(-10px);
+            }
+        }
+
+        &::before {
+            content: '';
+            width: 18px;
+            height: 18px;
+            background-repeat: no-repeat;
+            background-image: url(../../images/icons/back-arrow.svg);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: -25px;
+            transition: all ease 0.3s;
+        }
+    }
+
+    &__right {
+        height: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 20px 20px 40px 20px;
+        box-sizing: border-box;
+        width: 505px;
+        border-radius: 20px;
+    }
+
+    &__categories-sign {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    &__input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border: 1px solid #999999;
+        box-sizing: border-box;
+        border-radius: 100px;
+        padding: 17px 0 17px 35px;
+        background-color: transparent;
+        outline: none;
+
+        &:focus ~ .login__label, .login__input:not(:placeholder-shown).login__input:not(:focus) ~.login__label {
+            top: -13px;
+            font-size: 14px;
+            color: #999999;
+            left: 25px;
+        }
+
+    }
+
+    &__error {
+        position: absolute;
+        bottom: -25px;
+        left: 20px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0;
+        line-height: 18px;
+        color: #FE6645;
+
+        &.error {
+            font-size: 13px;
+        }
+    }
+
+    &__label {
+        position: absolute;
+        top: 0.8rem;
+        left: 30px;
+        padding: 0 5px 0 5px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 26px;
+        cursor: text;
+        transition: top 200ms ease-in,
+        left 200ms ease-in,
+        font-size 200ms ease-in;
+        color: #333333;
+        background-color: #fff;
+    }
+    
+    &__form {
+        margin-bottom: 67px;
+    }
+
+    &__subtitle {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: rgba(0,0,0,0.5);
+    }
+
+    &__wrapper {
+        position: relative;
+        height: 3rem;
+        margin-bottom: 40px;
+
+        &.wrapper--last {
+            margin-bottom: 77px;
+        }
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 49px;
+        color: #000000;
+    }
+
+    &__signin {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 33px;
+        color: #2D5BFF;
+        text-decoration: none;
+    }
+
+    &__btn {
+        background: #2D5BFF;
+        border-radius: 15px;
+        width: 100%;
+        border: none;
+        padding: 15px 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 26px;
+        text-align: center;
+        color: #FFFFFF;
+        cursor: pointer;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            top: 2px;
+            bottom: 0;
+            margin: auto;
+            background-repeat: no-repeat;
+            background-image: url(../../images/icons/back-arrow.svg);
+            transform: rotate(180deg);
+            right: 28%;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkCafe</title>
+    <link rel="icon" href="http://cdn.onlinewebfonts.com/svg/img_343621.png">
+    <link rel="stylesheet" href="../fonts/Inter/stylesheet.css">
+    <link rel="stylesheet" href="../fonts/Manrope/stylesheet.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body class="account-body">
+
+    <!-- Header -->
+    <header class="personal-header">
+        <div class="personal-header__inner container">
+            <div class="personal-header__left">
+                <a href="./personal.html" class="personal-header__link">
+                    <span class="personal-header__back">
+                        Back
+                    </span>
+                </a>
+                <a href="/pages/orders.html" class="personal-header__order-website">Order a website</a>
+            </div>
+
+            <div class="personal-header__right">
+                <div class="personal-header__info">
+                    <h3 class="personal-header__user-name">Abdulmalik Kalandarov</h3>
+                    <p class="personal-header__user-number">+998 97 760 09 03</p>
+                </div>
+                <a href="#">
+                    <img class="personal-header__avatar" src="/images/icons/avatar.png" alt="avatar" width="55" height="55">
+                </a>
+            </div>
+        </div>
+    </header>
+   <!-- MAIN -->
+   <main class="account-main">
+      <div class="container">
+        <section class="account">
+            <div class="account__inner">
+               <div class="account__info">
+                    <img class="account__avatar" src="../images/icons/big-avatar.svg" alt="Avatar" width="100" height="100">
+                    <h2 class="account__username">Abdumalik Kalandarov</h2>
+                    <p class="account__date">Date of registration: 01.10.2020</p>
+               </div>
+            </div>
+       </section>
+       <section class="set-account">
+            <form class="set-account__form">
+                <div class="login__wrapper set-account__box">
+                    <input type="text" id="profile-name" placeholder=" " autocomplete="off" class="login__input">
+                    <label for="profile-name" class="login__label">I.F.SH</label>
+                </div>
+                <div class="login__wrapper set-account__box">
+                    <input value="+998" type="tel" id="profile-number" placeholder=" " autocomplete="off" class="login__input">
+                    <label for="profile-number" class="login__label">Phone number</label>
+                </div>
+                <div class="login__wrapper set-account__box">
+                    <input  type="password" id="profile-password" placeholder=" " autocomplete="off" class="login__input">
+                    <label for="profile-password" class="login__label">Password</label>
+                </div>
+                <button class="set-account__btn" type="submit">Save Changes</button>
+            </form>
+       </section>
+      </div>
+   </main>
+   <footer class="account-footer">
+       <div class="account-footer__inner container">
+           <a class="logout" href="../index.html">
+               Log out
+           </a>
+       </div>
+   </footer>
+
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../images/backgrounds/bodyBgi.png');
+    overflow-x: hidden;
+}
+
+.form-section {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &____form {
+
+    }
+    &__title {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 49px;
+        color: #000000;
+        margin-bottom: 60px;
+    }
+    &__wrapper {
+        position: relative;
+        margin-bottom: 30px;
+        width: 450px;
+        height: 60px;
+    }
+    &__input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border: 1px solid #999999;
+        box-sizing: border-box;
+        border-radius: 100px;
+        padding: 17px 0 17px 35px;
+        background-color: transparent;
+        outline: none;
+
+        &:focus~.form-section__label,
+        .form-section__input:not(:placeholder-shown).form-section__input:not(:focus)~.form-section__label {
+            top: -13px;
+            font-size: 14px;
+            color: #999999;
+            left: 25px;
+        }
+    }
+    &__label {
+        position: absolute;
+        top: 0.8rem;
+        left: 30px;
+        padding: 0 5px 0 5px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 26px;
+        cursor: text;
+        transition: top 200ms ease-in,
+                    left 200ms ease-in,
+        font-size 200ms ease-in;
+        color: #333333;
+        background-color: #fff;
+    }
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #2D5BFF;
+        border-radius: 15px;
+        width: 450px;
+        padding: 17px 0;
+        border: none;
+        cursor: pointer;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 26px;
+        text-align: center;
+        color: #FFFFFF;
+
+        &:hover .button-icon .button-icon__img {
+            left: 30px;
+        }
+
+        &:hover .button-icon .button-icon__img2 {
+            left: 50%;
+        }
+        .button-icon {
+            margin-left: 8px;
+            width: 20px;
+            height: 20px;
+            position: relative;
+            overflow: hidden;
+            &__img {
+                width: 18px;
+                height: 18px;
+                position: absolute;
+                top: 49%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: 0.2s ease;
+            }
+            &__img2 {
+                width: 18px;
+                height: 18px;
+                position: absolute;
+                top: 50%;
+                left: -50%;
+                transform: translate(-50%, -50%);
+                transition: 0.2s ease;
+            }
+        }
+    }
+
+}

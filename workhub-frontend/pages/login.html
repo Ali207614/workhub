@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" href="http://cdn.onlinewebfonts.com/svg/img_343621.png">
+    <link rel="stylesheet" href="../fonts/Inter/stylesheet.css">
+    <link rel="stylesheet" href="../fonts/Manrope/stylesheet.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="login">
+        <div class="login__inner container">
+            <div class="login__left">
+                <a href="/" class="login__back">Back</a>
+            </div>
+
+            <div class="login__right">
+                <div class="login__top-right"></div>
+                <div class="login__center-right">
+                    <div class="login__categories-sign">
+                        <h3 class="login__title">Sign in</h3>
+                        <a href="./register.html" class="login__signin">Sign up</a>
+                    </div>
+
+                    <form id="login-form" class="login__form">
+
+                        <div class="login__wrapper">
+                            <input value="+998" type="phone" id="login-number" placeholder=" " autocomplete="off" class="login__input">
+                            <label for="login-number" class="login__label">Phone number</label>
+                            <span id="phone-error" class="login__error">Enter the Phone number in the correct view</span>
+                        </div>
+
+                        <div class="login__wrapper wrapper--last">
+                            <input type="password" id="login-password" placeholder=" " autocomplete="off" class="login__input">
+                            <label for="login-password" class="login__label">Password</label>
+                            <span id="password-error" class="login__error">Enter the Password in the correct view</span>
+                        </div>
+
+                        <button class="login__btn">Enter the account</button>
+                    </form>
+
+                    <h4 class="login__subtitle">
+                        By clicking the Start button, you create an account and agree to the Terms and Privacy Policy
+                    </h4>
+                </div>
+                <div class="login__bottom-right"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/request.js"></script>
+    <script src="../scripts/login.js"></script>
+</body>
+</html>
